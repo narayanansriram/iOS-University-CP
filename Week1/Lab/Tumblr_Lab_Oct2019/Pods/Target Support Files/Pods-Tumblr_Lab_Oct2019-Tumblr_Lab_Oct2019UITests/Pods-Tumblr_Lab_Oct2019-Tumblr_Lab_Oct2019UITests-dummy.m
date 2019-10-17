@@ -1,0 +1,5 @@
+#import <Foundation/Foundation.h>
+@interface PodsDummy_Pods_Tumblr_Lab_Oct2019_Tumblr_Lab_Oct2019UITests : NSObject
+@end
+@implementation PodsDummy_Pods_Tumblr_Lab_Oct2019_Tumblr_Lab_Oct2019UITests
+@end
