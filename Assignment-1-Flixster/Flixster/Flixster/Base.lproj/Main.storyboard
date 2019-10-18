@@ -39,7 +39,7 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bjx-iY-JJ0">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bjx-iY-JJ0">
                                                     <rect key="frame" x="169.5" y="11" width="223.5" height="21"/>
                                                     <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -47,6 +47,7 @@
                                                 </label>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="1Fm-jL-QUr" secondAttribute="bottom" constant="1" id="8fU-mZ-YZH"/>
                                                 <constraint firstItem="XIX-ab-FmX" firstAttribute="top" secondItem="bjx-iY-JJ0" secondAttribute="top" id="AsS-3q-5pX"/>
                                                 <constraint firstItem="XIX-ab-FmX" firstAttribute="leading" secondItem="EfD-k6-4dK" secondAttribute="leadingMargin" constant="-4" id="C1A-WY-QAU"/>
                                                 <constraint firstItem="1Fm-jL-QUr" firstAttribute="top" secondItem="bjx-iY-JJ0" secondAttribute="bottom" constant="8" id="Efv-rd-icw"/>
@@ -56,7 +57,7 @@
                                                 <constraint firstItem="1Fm-jL-QUr" firstAttribute="top" secondItem="bjx-iY-JJ0" secondAttribute="bottom" constant="8" id="Lfv-uG-aGm"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="bjx-iY-JJ0" secondAttribute="trailing" constant="1" id="eTp-RC-ibt"/>
                                                 <constraint firstItem="XIX-ab-FmX" firstAttribute="top" secondItem="EfD-k6-4dK" secondAttribute="topMargin" id="gWj-63-A4V"/>
-                                                <constraint firstItem="bjx-iY-JJ0" firstAttribute="top" secondItem="EfD-k6-4dK" secondAttribute="topMargin" id="hpA-Jn-Ca5"/>
+                                                <constraint firstItem="bjx-iY-JJ0" firstAttribute="top" relation="greaterThanOrEqual" secondItem="EfD-k6-4dK" secondAttribute="topMargin" id="hpA-Jn-Ca5"/>
                                                 <constraint firstItem="bjx-iY-JJ0" firstAttribute="leading" secondItem="XIX-ab-FmX" secondAttribute="trailing" constant="8" symbolic="YES" id="p4V-CL-28K"/>
                                             </constraints>
                                         </tableViewCellContentView>

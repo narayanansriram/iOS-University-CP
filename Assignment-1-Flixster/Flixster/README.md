@@ -13,13 +13,14 @@ Flix is an app that allows users to browse movies from the [The Movie Database A
 - [x] (3pts) User can view the movie poster image for each movie.
 
 #### BONUS
-- [ ] (2pt) User can view the app on various device sizes and orientations.
-- [ ] (1pt) Run your app on a real device.
+- [x] (2pt) User can view the app on various device sizes and orientations.
+- [x] (1pt) Run your app on a real device.
 
 ### App Walkthough GIF
-`TODO://` Add the URL to your animated app walkthough `gif` in the image tag below, `YOUR_GIF_URL_HERE`. Make sure the gif actually renders and animates when viewing this README. (🚫 Remove this paragraph after after adding gif)
-
-<img src="YOUR_GIF_URL_HERE" width=250><br>
+- iPhone 11 Max Pro optimized version
+<img src="https://media.giphy.com/media/hVsFwUeGlFmBR3uxf8/giphy.gif" width=250><br>
+- iPhone 8 version
+<img src="https://media.giphy.com/media/h2lIpwCyMoWHw19omQ/giphy.gif" width=250><br>
 
 ### Notes
 Describe any challenges encountered while building the app.
