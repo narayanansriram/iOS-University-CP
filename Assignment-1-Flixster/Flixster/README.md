@@ -17,10 +17,10 @@ Flix is an app that allows users to browse movies from the [The Movie Database A
 - [x] (1pt) Run your app on a real device.
 
 ### App Walkthough GIF
-- iPhone 11 Max Pro optimized version
-<img src="https://media.giphy.com/media/hVsFwUeGlFmBR3uxf8/giphy.gif" width=250><br>
-- iPhone 8 version
-<img src="https://media.giphy.com/media/h2lIpwCyMoWHw19omQ/giphy.gif" width=250><br>
+- iPhone 11 Max Pro optimized version <br/>
+- <img src="https://media.giphy.com/media/hVsFwUeGlFmBR3uxf8/giphy.gif" width=250><br>
+- iPhone 8 version <br/>
+- <img src="https://media.giphy.com/media/h2lIpwCyMoWHw19omQ/giphy.gif" width=250><br>
 
 ### Notes
 Describe any challenges encountered while building the app.
