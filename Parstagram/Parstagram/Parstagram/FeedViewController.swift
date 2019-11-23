@@ -12,17 +12,22 @@ import AlamofireImage
 import Alamofire
 import MessageInputBar
 
-class FeedViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, MessageInputBarDelegate {
+class FeedViewController: UIViewController,UITableViewDelegate,UITableViewDataSource,MessageInputBarDelegate {
 
     @IBOutlet var tableView: UITableView!
     
+    var posts = [PFObject]()
     let commentBar = MessageInputBar()
     var showsCommentBar = false
-    var posts = [PFObject]()
     var selectedPost: PFObject!
     override func viewDidLoad() {
         super.viewDidLoad()
         DataRequest.addAcceptableImageContentTypes(["application/octet-stream"])
+        
+        commentBar.inputTextView.placeholder = "Add a comment..."
+        commentBar.sendButton.title = "Post"
+        commentBar.delegate = self
+        
         tableView.delegate = self
         tableView.dataSource = self
         
@@ -76,6 +81,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
                 print("Error saving comment")
             }
         }
+        tableView.reloadData()
         //Clear and dismiss the input
         commentBar.inputTextView.text = nil
         showsCommentBar = false
@@ -135,6 +141,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
             showsCommentBar = true
             becomeFirstResponder()
             commentBar.inputTextView.becomeFirstResponder()
+            selectedPost = post
         }
         /*comment["text"] = "This is a random comment"
         comment["post"] = post
@@ -163,7 +170,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         let main = UIStoryboard(name: "Main", bundle: nil)
         let loginViewController = main.instantiateViewController(withIdentifier: "LoginViewController")
-        let delegate = UIApplication.shared.delegate as! SceneDelegate
+        let delegate = self.view.window?.windowScene?.delegate as! SceneDelegate
         
         delegate.window?.rootViewController = loginViewController
         PFUser.logOut()
